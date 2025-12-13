@@ -3,10 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MattressPicks - Coming Soon</title>
+    <meta name="description" content="Find the perfect mattress with MattressPicks. Compare mattresses by sleep position, firmness level, and budget with detailed spec tables and expert recommendations.">
+    <title>MattressPicks - Find Your Perfect Mattress | Compare by Sleep Position, Firmness &amp; Budget</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-38BF85QJG1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-38BF85QJG1');
+    </script>
 </head>
 <body>
-    <h1>MattressPicks</h1>
-    <p>Site under construction</p>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Mattress<span>Picks</span></a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+                <nav>
+                    <ul id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="side-sleepers.html">By Sleep Position</a></li>
+                        <li><a href="medium-firm-mattresses.html">By Firmness</a></li>
+                        <li><a href="budget-mattresses.html">By Budget</a></li>
+                        <li><a href="how-we-test.html">How We Test</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Find Your Perfect Mattress</h1>
+            <p>Compare top-rated mattresses by sleep position, firmness level, and budget. Make an informed decision with our detailed spec tables and expert recommendations.</p>
+            <a href="#categories" class="btn btn-accent">Start Comparing</a>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <div class="affiliate-disclosure">
+                <strong>Affiliate Disclosure:</strong> We may earn a commission when you purchase through links on our site. This helps support our research and testing. Learn more on our <a href="about.html">About page</a>.
+            </div>
+
+            <section id="categories" class="content-section">
+                <h2>Shop by Sleep Position</h2>
+                <p>Your sleep position is one of the most important factors in choosing the right mattress. Find the best options for how you sleep.</p>
+
+                <div class="category-grid">
+                    <a href="side-sleepers.html" class="category-card">
+                        <div class="icon">&#128716;</div>
+                        <h3>Side Sleepers</h3>
+                        <p>Soft to medium mattresses with excellent pressure relief for hips and shoulders.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+
+                    <a href="back-sleepers.html" class="category-card">
+                        <div class="icon">&#128564;</div>
+                        <h3>Back Sleepers</h3>
+                        <p>Medium to medium-firm options with lumbar support to maintain spinal alignment.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+
+                    <a href="stomach-sleepers.html" class="category-card">
+                        <div class="icon">&#128719;</div>
+                        <h3>Stomach Sleepers</h3>
+                        <p>Firm mattresses that prevent hip sinking and keep your spine neutral.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+
+                    <a href="combination-sleepers.html" class="category-card">
+                        <div class="icon">&#128260;</div>
+                        <h3>Combination Sleepers</h3>
+                        <p>Responsive mattresses that adapt quickly as you change positions at night.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Shop by Firmness Level</h2>
+                <p>Everyone has different comfort preferences. Find mattresses that match your ideal firmness.</p>
+
+                <div class="category-grid">
+                    <a href="soft-mattresses.html" class="category-card">
+                        <div class="icon">&#9729;</div>
+                        <h3>Soft Mattresses</h3>
+                        <p>Plush, cushioning feel. Ideal for lightweight sleepers and side sleepers.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+
+                    <a href="medium-firm-mattresses.html" class="category-card">
+                        <div class="icon">&#9878;</div>
+                        <h3>Medium-Firm Mattresses</h3>
+                        <p>The most popular firmness level. Balances support and comfort for most sleepers.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+
+                    <a href="firm-mattresses.html" class="category-card">
+                        <div class="icon">&#9879;</div>
+                        <h3>Firm Mattresses</h3>
+                        <p>Strong support with minimal sinking. Best for stomach sleepers and heavier individuals.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Shop by Budget</h2>
+                <p>Quality sleep doesn't have to break the bank. Find the best mattress for your price range.</p>
+
+                <div class="category-grid">
+                    <a href="budget-mattresses.html" class="category-card">
+                        <div class="icon">&#128176;</div>
+                        <h3>Budget-Friendly</h3>
+                        <p>Under $500. Great value mattresses that don't compromise on quality.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+
+                    <a href="mid-range-mattresses.html" class="category-card">
+                        <div class="icon">&#128177;</div>
+                        <h3>Mid-Range</h3>
+                        <p>$500-$1,000. Premium features at reasonable prices.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+
+                    <a href="luxury-mattresses.html" class="category-card">
+                        <div class="icon">&#10024;</div>
+                        <h3>Luxury</h3>
+                        <p>Over $1,000. Top-tier materials and construction for the ultimate sleep experience.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Shop by Mattress Type</h2>
+                <p>Different mattress constructions offer unique benefits. Explore your options.</p>
+
+                <div class="category-grid">
+                    <a href="memory-foam-mattresses.html" class="category-card">
+                        <div class="icon">&#127769;</div>
+                        <h3>Memory Foam</h3>
+                        <p>Contouring pressure relief and motion isolation. Great for couples.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+
+                    <a href="hybrid-mattresses.html" class="category-card">
+                        <div class="icon">&#9889;</div>
+                        <h3>Hybrid</h3>
+                        <p>Combines foam comfort with innerspring support and breathability.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+
+                    <a href="couples-mattresses.html" class="category-card">
+                        <div class="icon">&#128149;</div>
+                        <h3>Best for Couples</h3>
+                        <p>Minimal motion transfer and edge support for undisturbed sleep together.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+
+                    <a href="back-pain-mattresses.html" class="category-card">
+                        <div class="icon">&#127890;</div>
+                        <h3>Best for Back Pain</h3>
+                        <p>Supportive options designed to relieve pressure and align your spine.</p>
+                        <span class="btn btn-sm btn-outline">View Top Picks</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="content-box">
+                    <h2>Why Trust MattressPicks?</h2>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4>Detailed Research</h4>
+                            <p>We analyze hundreds of mattresses across construction, materials, firmness levels, and real customer feedback.</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>Side-by-Side Comparisons</h4>
+                            <p>Our spec tables make it easy to compare multiple mattresses at once on the features that matter most.</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>No Hidden Agenda</h4>
+                            <p>We recommend mattresses based on quality and value, not just commission rates. Your sleep comes first.</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>Updated Regularly</h4>
+                            <p>We continuously update our picks to reflect new releases, price changes, and updated reviews.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>By Sleep Position</h4>
+                    <ul>
+                        <li><a href="side-sleepers.html">Side Sleepers</a></li>
+                        <li><a href="back-sleepers.html">Back Sleepers</a></li>
+                        <li><a href="stomach-sleepers.html">Stomach Sleepers</a></li>
+                        <li><a href="combination-sleepers.html">Combination Sleepers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>By Firmness</h4>
+                    <ul>
+                        <li><a href="soft-mattresses.html">Soft Mattresses</a></li>
+                        <li><a href="medium-firm-mattresses.html">Medium-Firm</a></li>
+                        <li><a href="firm-mattresses.html">Firm Mattresses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>By Budget</h4>
+                    <ul>
+                        <li><a href="budget-mattresses.html">Under $500</a></li>
+                        <li><a href="mid-range-mattresses.html">$500-$1,000</a></li>
+                        <li><a href="luxury-mattresses.html">Over $1,000</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="how-we-test.html">How We Test</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="memory-foam-mattresses.html">Memory Foam</a></li>
+                        <li><a href="hybrid-mattresses.html">Hybrid Mattresses</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MattressPicks. All rights reserved.</p>
+                <p>As an Amazon Associate, we earn from qualifying purchases.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
